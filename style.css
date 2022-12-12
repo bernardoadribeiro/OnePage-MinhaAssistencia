@@ -84,3 +84,8 @@ section {
 .article {
     padding: 70px 30px 45px 0px;
 }
+
+/* Tabela */
+.table {
+    color: var(--main-bg-color);
+}
