@@ -148,7 +148,7 @@
             <p class="lead">Aqui estão algumas das perguntas mais frequentes enviadas por nossos clientes iniciantes e regulares.</p>
 
             <!-- Accordeon -->
-            <div class="accordion" id="accordionExample">
+            <div class="accordion" id="accordionFaq">
                 <!-- Item 1 -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
@@ -156,7 +156,7 @@
                         Quanto tempo vai demorar para consertar meu telefone?
                     </button>
                   </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionFaq">
                     <div class="accordion-body">
                         O tempo de resposta é de 2 a 7 dias após o recebimento do telefone, dependendo do trabalho e da disponibilidade de peças. A maioria dos trabalhos é concluída em 2 a 3 dias. Isso depende da falha, marca do telefone e peças necessárias.
                     </div>
@@ -170,7 +170,7 @@
                         Por que as cobranças são diferentes?
                     </button>
                   </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFaq">
                     <div class="accordion-body">
                         Cada reparo é cobrado de acordo com o tempo gasto, o tipo de dano e as peças necessárias. Até avaliarmos os danos, não podemos saber o verdadeiro custo do reparo. Um depósito será cobrado antes de avaliarmos os danos.
                     </div>
@@ -184,7 +184,7 @@
                         Preciso de uma consulta?
                     </button>
                   </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFaq">
                     <div class="accordion-body">
                         Oferecemos um serviço de entrega - não é necessário agendamento, pois oferecemos um serviço de entrega por ordem de chegada. Por favor, traga seu telefone quando for conveniente. Se você optar por reservar on-line, poderá economizar $ 10, mas isso não garante uma consulta neste momento - nós o avisaremos sobre o tempo de espera quando você chegar.
                     </div>
@@ -198,7 +198,7 @@
                         O que acontece se você não conseguir consertar meu dispositivo?
                       </button>
                     </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionFaq">
                       <div class="accordion-body">
                         Se não pudermos consertar seu dispositivo, entraremos em contato com você para discutir suas opções. Podemos oferecer a você um dispositivo de substituição por um custo ou podemos devolver o dispositivo a você e reembolsar sua taxa de serviço.
                       </div>
@@ -270,8 +270,47 @@
             <!-- Saiba mais / requisitar orcamento -->
             <div class="col-6">
                 <h2>Saiba mais sobre os nossos serviços de reparação</h2>
-                <input type="button" value="Requisitar orçamento" class="bg-theme-secondary btn btn-lg">
+                <input type="button" value="Requisitar orçamento" class="bg-theme-secondary btn btn-lg" data-bs-toggle="modal" data-bs-target="#orcamentoModal">
+                <!-- <button type="button" class="bg-theme-secondary btn btn-lg" ></button> -->
             </div>
+
+                <!-- Modal de contato -->
+                <div class="modal fade" id="orcamentoModal" tabindex="-1" aria-labelledby="orcamentoModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="orcamentoModalLabel">Solicitar orçamento</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="nome" class="col-form-label">Nome:</label>
+                                        <input type="text" class="form-control" id="nome" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="col-form-label">Email:</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="Celular" class="col-form-label">Celular:</label>
+                                        <input type="number" class="form-control" id="celular"  placeholder="Insira apenas números">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Message:</label>
+                                        <textarea class="form-control" id="message-text" required></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            
+                            <div class="modal-footer">
+                                <button type="button" class="btn bg-theme-tertiary" data-bs-dismiss="modal">Fechar</button>
+                                <button type="button" class="btn bg-theme-secondary">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             <!-- Contato -->
             <div class="col">

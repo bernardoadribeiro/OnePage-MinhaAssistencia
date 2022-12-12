@@ -112,3 +112,7 @@ footer {
     margin: 85px;
     text-align: center;
 }
+
+.modal {
+    color: var(--main-bg-color);
+}
