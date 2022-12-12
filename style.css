@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Ubuntu', sans-serif;
+    color: var(--main-bg-color);
 }
 
 /* Cores padrao de background */
@@ -22,6 +23,16 @@ body {
     background-color: var(--tertiary-bg-color);
 }
 
+/* Section intro */
+.section-intro {
+    background-image: url("./imagens/celular-aberto-intro.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    position: relative;
+    padding: 4.375rem 0rem;
+}
+
 
 /* NavBar */
 .nav-link:hover {
@@ -34,13 +45,35 @@ body {
 
 
 /* Titulos */
-h1 {font-size: 72px;}
+h1 {
+    font-size: 72px;
+    font-weight: 500;
+}
 
-h2 {font-size: 48px;}
+h2 {
+    font-size: 48px; 
+    font-weight: 700;
+}
 
-h3 {font-size: 30px;}
+h3 {
+    font-size: 30px; 
+    font-weight: 700;
+}
 
 h4 {font-size: 24px;}
 
 h5 {font-size: 20px;}
 
+
+/* Paragrafos */
+.big {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* Sections */
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
