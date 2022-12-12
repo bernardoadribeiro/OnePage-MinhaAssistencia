@@ -13,14 +13,17 @@ body {
 /* Cores padrao de background */
 .bg-theme-primary {
     background-color: var(--main-bg-color);
+    color: white;
 }
 
 .bg-theme-secondary {
     background-color: var(--secondary-bg-color);
+    color: white;
 }
 
 .bg-theme-tertiary {
     background-color: var(--tertiary-bg-color);
+    color: var(--main-bg-color);
 }
 
 /* Section intro */
@@ -76,7 +79,7 @@ h5 {font-size: 20px;}
 
 
 /* Sections */
-section {
+section, .section {
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -88,4 +91,24 @@ section {
 /* Tabela */
 .table {
     color: var(--main-bg-color);
+}
+
+
+/* Footer */
+footer {
+    color: white;
+    background-color: var(--main-bg-color);
+}
+
+.redes-sociais, .redes-sociais > a {
+    display: block;
+    margin-bottom: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.direitos-autorais {
+    margin: 85px;
+    text-align: center;
 }

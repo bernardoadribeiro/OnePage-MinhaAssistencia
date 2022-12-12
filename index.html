@@ -259,9 +259,60 @@
     </section>
 
     <!-- Footer -->
-    
+    <footer class="footer section">
+        <div class="row ">
+
+            <!-- Saiba mais / requisitar orcamento -->
+            <div class="col-6">
+                <h2>Saiba mais sobre os nossos serviços de reparação</h2>
+                <input type="button" value="Requisitar orçamento" class="bg-theme-secondary btn btn-lg">
+            </div>
+
+            <!-- Contato -->
+            <div class="col">
+                <h3>Entre em contato</h3>
+                <p>+55 (38) 9xxxx-xxxx</p>
+                <p>Av. Nome da rua, 123, Centro, Cidade-UF</p>
+            </div>
+
+            <!-- Redes sociais -->
+            <div class="col">
+                <h3>Redes sociais</h3>
+
+                <div class="redes-sociais">
+                    <a href="http://intagram.com/">
+                        <img src="./imagens/034-instagram 1.svg" alt="instagram">
+                        _bernardorib
+                    </a>
+                    
+                    <a href="http://linkedin.com/">
+                        <img src="./imagens/031-linkedin 1.svg" alt="linkedin">
+                        /bernardoadribeiro
+                    </a>
+
+                    <a href="http://github.com/">
+                        <img src="./imagens/039-github 1.svg" alt="linkedin">
+                        /bernardoadribeiro
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row align-content-center direitos-autorais">
+            <p>Bernardo Ribeiro &copy; <span id="ano"></span>. Todos os direitos reservados.</p>
+        </div>
+        <div class="row col-12">
+            <p class="small">Minha Assistência oferece reparos para a maioria dos dispositivos portáteis, como celulares, tablets, Ipads, laptops e MacBooks. Nossa equipe experiente, amplo conhecimento, habilidades e equipamentos sofisticados nos colocam à frente da concorrência.</p>
+        </div>
+    </footer>
 
     <!-- Scripts JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script>
+        const ano = document.getElementById("ano");
+        const anoAtual = new Date();
+        ano.innerHTML = anoAtual.getFullYear();
+    </script>
 </body>
 </html>
