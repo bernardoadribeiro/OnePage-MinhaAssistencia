@@ -116,3 +116,7 @@ footer {
 .modal {
     color: var(--main-bg-color);
 }
+
+.accordion-button, .accordion-body {
+    color: var(--main-bg-color);
+}
