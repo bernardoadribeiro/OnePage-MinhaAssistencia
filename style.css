@@ -1,0 +1,46 @@
+/* Variaveis do tema do site */
+:root{
+    --main-bg-color: #000361;
+    --secondary-bg-color: #2173FF;
+    --tertiary-bg-color: #F0F3F6;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Cores padrao de background */
+.bg-theme-primary {
+    background-color: var(--main-bg-color);
+}
+
+.bg-theme-secondary {
+    background-color: var(--secondary-bg-color);
+}
+
+.bg-theme-tertiary {
+    background-color: var(--tertiary-bg-color);
+}
+
+
+/* NavBar */
+.nav-link:hover {
+    color: var(--secondary-bg-color);
+}
+
+.nav-link {
+    color: white;
+}
+
+
+/* Titulos */
+h1 {font-size: 72px;}
+
+h2 {font-size: 48px;}
+
+h3 {font-size: 30px;}
+
+h4 {font-size: 24px;}
+
+h5 {font-size: 20px;}
+
