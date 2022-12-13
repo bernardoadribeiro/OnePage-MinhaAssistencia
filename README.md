@@ -8,3 +8,4 @@ Para construção da página web serão utilizadas:
 
 O tema escolhido foi a construção de uma página no estilo "One page" para uma assistência técnica especilizada em manutenção de celulares.
 
+[Veja aqui o resultado final](https://bernardoadribeiro.github.io/OnePage-MinhaAssistencia/)
